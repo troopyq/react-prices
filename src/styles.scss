@@ -11,8 +11,9 @@
 
 body {
 	background-color: #f3f3f3;
-	padding: 0;
+	padding: 20px 10px;
 	margin: 0;
+	overflow-x: hidden;
 }
 
 .num {
@@ -37,10 +38,12 @@ body {
 }
 
 .price {
+	overflow: hidden;
 	margin: 0 auto;
-	padding: 1.4cm;
+	padding: 1.1cm;
 	width: 21cm;
 	height: 29.7cm;
+	// height: 29cm;
 	display: flex;
 	align-items: flex-start;
 	align-content: flex-start;
@@ -120,8 +123,20 @@ body {
 	margin: 0mm;
 }
 
+@media screen and (max-width: 900px) {
+	.price {
+		width: 100%;
+		height: auto;
+		min-height: 29.7cm;
+	}
+}
+
 @media print {
 	.head {
 		display: none;
+	}
+	.price {
+		width: 21cm;
+		height: 29cm;
 	}
 }
