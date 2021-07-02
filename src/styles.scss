@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+
+.App {
+	font-family: sans-serif;
+	text-align: center;
+	font-family: Arial, Helvetica, sans-serif;
+}
+* {
+	box-sizing: border-box;
+}
+
+body {
+	background-color: #f3f3f3;
+	padding: 0;
+	margin: 0;
+}
+
+.num {
+	line-height: 100%;
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 600;
+	width: 3.8cm;
+	height: 3.8cm;
+	border-radius: 50%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 45.8pt;
+	// font-size: 45.2pt;
+	border: 0.04cm dashed black;
+	box-sizing: content-box;
+	cursor: pointer;
+	transition: all 0.12s;
+	&:hover {
+		background-color: rgb(255, 105, 105);
+	}
+}
+
+.price {
+	margin: 0 auto;
+	padding: 1.4cm;
+	width: 21cm;
+	height: 29.7cm;
+	display: flex;
+	align-items: flex-start;
+	align-content: flex-start;
+	flex-wrap: wrap;
+	column-gap: 0.78cm;
+	row-gap: 0.78cm;
+	background-color: #fff;
+}
+
+.inp {
+	margin: 0 auto;
+	margin-bottom: 30px;
+	height: 45px;
+	display: flex;
+	width: 200px;
+	justify-content: center;
+	align-self: center;
+	input {
+		font-size: 18px;
+		height: 100%;
+		flex: 0 0 85%;
+		padding: 8px 15px;
+		text-align: center;
+		border-radius: 50px;
+		border: 1px solid greenyellow;
+		outline: none;
+		&:focus {
+			outline: none;
+		}
+	}
+	button {
+		font-size: 18px;
+		font-weight: 600;
+		display: inline-block;
+		flex: 0 0 45px;
+		height: 45px;
+		border-radius: 15px;
+		outline: none;
+		border: 1px solid greenyellow;
+		margin-left: 10px;
+		background-color: #fff;
+		transition: all 0.12s;
+		&:active {
+			background-color: greenyellow;
+		}
+	}
+}
+.btn {
+	font-size: 18px;
+	font-weight: 600;
+	display: inline-block;
+	flex: 0 0 45px;
+	height: 45px;
+	border-radius: 15px;
+	outline: none;
+	border: 1px solid greenyellow;
+	margin-left: 10px;
+	background-color: #fff;
+	transition: all 0.12s;
+	cursor: pointer;
+	&:hover {
+		background-color: rgba(172, 255, 46, 0.2);
+	}
+	&:active {
+		background-color: greenyellow;
+	}
+
+	&_print {
+		width: auto;
+		padding: 7px 15px;
+		margin-bottom: 20px;
+	}
+}
+
+@page {
+	size: auto;
+	margin: 0mm;
+}
+
+@media print {
+	.head {
+		display: none;
+	}
+}
